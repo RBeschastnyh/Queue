@@ -6,7 +6,7 @@ public class QueueRequest {
 
     private String studentName;
     private String subject;
-    private Date desiredDate;
+    private String desiredDate;
     private String desiredTask;
 
     public String getStudentName() {
@@ -25,11 +25,11 @@ public class QueueRequest {
         this.subject = subject;
     }
 
-    public Date getDesiredDate() {
+    public String getDesiredDate() {
         return desiredDate;
     }
 
-    public void setDesiredDate(Date desiredDate) {
+    public void setDesiredDate(String desiredDate) {
         this.desiredDate = desiredDate;
     }
 
