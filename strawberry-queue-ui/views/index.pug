@@ -2,12 +2,16 @@ extends layout
 
 block content
   div
-    h1= 'Запись в очередь'
-  div
-    p Welcome to #{title}
-  form(action='/book', method='POST')
+    p Запись в очередь
+  form(action='/book', method='POST', target='dummyframe')
     p
-      input(type='text', name='name_space')
-      input(type='text', name='class_space')
-      input(type='text', name='data_space')
-    input(type='submit', value='Подтвердить')
+      input(type='text', name='name_space', placeholder='Как тебя зовут?', required='true')
+      select(name='class_space', required='true')
+        option(disabled selected Select your option)
+        option Операционные системы
+        option Методы программирования
+      input(type='text', name='task_space', placeholder='Что сдаёшь?', required='true')
+      input(type="date", name='data_space', id='data', required='true')
+    input(type='submit', value='Записаться!')
+  iframe(width="0" height="0" border="0" name="dummyframe" id="dummyframe")
+  script(src="/javascripts/handler.js")

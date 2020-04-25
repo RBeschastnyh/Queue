@@ -9,7 +9,20 @@ a {
 
 input {
   padding-right: 15px;
+  padding-left: 4px;
   display: block;
   box-sizing: border-box;
   margin-bottom: 5px;
+}
+
+input[name="data_space"] {
+  width: 185px;
+}
+
+select{
+  width: 185px;
+  height: 22px;
+  padding-bottom: 1px;
+  margin-bottom: 4px;
+  padding-right: 0px;
 }
