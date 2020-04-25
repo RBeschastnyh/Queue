@@ -1,7 +1,5 @@
 package ru.strawberry.queue.model;
 
-import java.util.Date;
-
 public class QueueRequest {
 
     private String studentName;
