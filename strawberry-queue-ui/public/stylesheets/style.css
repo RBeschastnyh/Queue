@@ -13,6 +13,7 @@ input {
   display: block;
   box-sizing: border-box;
   margin-bottom: 5px;
+  text-align:center;
 }
 
 input[name="data_space"] {
@@ -25,4 +26,31 @@ select{
   padding-bottom: 1px;
   margin-bottom: 4px;
   padding-right: 0px;
+  align-self: center;
 }
+
+.center-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+#submit-button{
+  margin-left: 45px;
+}
+#data{
+  padding-left: 25px;
+}
+input[type=date]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  display: none;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  -webkit-appearance: none;
+  display: none;
+}
+
