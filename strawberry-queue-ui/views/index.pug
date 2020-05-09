@@ -3,17 +3,17 @@ extends layout
 block content
   div(class='center-screen')
     div
-      p Запись в очередь
+      p(class = "free-font") Запись в очередь
     form(action='/book', method='POST', target='dummyframe')
       p
-        input(type='text', name='name_space', placeholder='Как тебя зовут?', required='true')
+        input(type='text', name='name_space', placeholder='Как тебя зовут?', required='true', autocomplete="off")
         select(name='class_space', required='true')
           option(disabled selected Select your option)
           option Операционные системы
           option Методы программирования
-        input(type='text', name='task_space', placeholder='Что сдаёшь?', required='true')
-        input(type="date", name='data_space', id='data', required='true')
+        input(type='text', name='task_space', placeholder='Что сдаёшь?', required='true', autocomplete="off")
+        input(type="date", name='data_space', id='data', required='true', autocomplete="off")
       div(class='outter-submit')
-        input(type='submit', value='Записаться!', id='submit-button', required='required')
+        input(type='submit', value='В очередь!', id='submit-button')
     iframe(width="0" height="0" border="0" name="dummyframe" id="dummyframe")
     script(src="/javascripts/handler.js")
