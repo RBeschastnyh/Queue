@@ -19,9 +19,8 @@ public class QueueController {
     public BookingService bookingService;
 
     @PostMapping(path = "/book")
-    public String bookPlaceInQueue(QueueRequest queueRequest){
+    public void bookPlaceInQueue(QueueRequest queueRequest){
         bookingService.bookPlace(queueRequest);
-        return "Lel";
     }
 
 }

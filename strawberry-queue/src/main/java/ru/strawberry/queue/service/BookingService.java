@@ -38,7 +38,7 @@ public class BookingService implements BookingServiceInterface{
         methodsUser.setSubject(queueRequest.getSubject());
         methodsUser.setTask(queueRequest.getDesiredTask());
         try {
-            methodsUser.setTaskDate(new SimpleDateFormat("yyyy-mm-dd").parse(queueRequest.getDesiredDate()));
+            methodsUser.setTaskDate(new SimpleDateFormat("yyyy-MM-dd").parse(queueRequest.getDesiredDate()));
         } catch (ParseException e) {
             e.printStackTrace();
         }
